@@ -21,12 +21,12 @@ The folder structure of the framework is as follows:
  - src/test/resources/apps - Folder where the test app apk file should be placed to install
  - src/test/resources/testSuites - Folder where the test suite xml should be placed. The xml should have the following parameters set at suite level. Refer the demo test xml available in the folder.
 	- "<parameter name="platform_name" value="ANDROID" />"
-	- "<parameter name="platform_version" value="10" /> -- platform version"
-	- "<parameter name="device_name" value="Pixel_4" /> -- Name of the emulator"
-	- "<parameter name="new_command_timeout" value="120" /> -- Timeout waiting for new command"
+	- "<parameter name="platform_version" value="10" /> (platform version)"
+	- "<parameter name="device_name" value="Pixel_4" /> (Name of the emulator)"
+	- "<parameter name="new_command_timeout" value="120" /> (Timeout waiting for new command)"
 	- "<parameter name="appToTest"	value="<Absolute path to the folder>/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk" />"
 	- "<parameter name="appPackage" value="com.swaglabsmobileapp" />"
 	- "<parameter name="appActivity" value="com.swaglabsmobileapp.MainActivity" />"
 	- "<parameter name="avd" value="Pixel_4" />"
      	- "<parameter name="consolePort" value="5556" />"
-     	- "<parameter name="appiumServerURL" value="http://127.0.0.1:4723/wd/hub" /> -- Appium server URL"
+     	- "<parameter name="appiumServerURL" value="http://127.0.0.1:4723/wd/hub" /> (Appium server URL)"
