@@ -37,3 +37,16 @@ The folder structure of the framework is as follows:
 	- test_report_config: Location where the extent test report config file is located (Can be left as it is)
 	- report_name: Name of the test report
  - src/test/resources/testData.db - Sqlite test data db location
+ - pom.xml - Maven pom file. The test is run using the maven surefire plugin. Make sure the testng suite xml is provided in the pom build -> plugin section. Refer the exisitng pom xml.
+
+# Running the demo test app
+- After setting up the framework in your machine make sure following updates are done in src/test/resources/testSuites/suite.xml.
+	- parameter name="device_name" value="Should be set to the emulator name in your device"
+	- parameter name="appToTest" value="Absolute path/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
+	- parameter name="avd" value="Should be set to the emulator name in your device"
+	- parameter name="consolePort" value="Port on which you intent to run the emulator. Can leave default value if the port is available"
+	- parameter name="appiumServerURL" value="The appium server url. Can use the existing value if local server with default port is used"
+- Make sure appium server is running.
+- Make sure adb service is running (adb start-server).
+- Once the above updates and checks are done run 'mvn clean test' from the 'pom.xml' location.
+- After the test is run the report will be generated in the /testReport location.
