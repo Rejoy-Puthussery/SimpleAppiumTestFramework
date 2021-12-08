@@ -1,6 +1,6 @@
 # SimpleAppiumTestFramework
 A simple test framework to perform automation testing on Andoird Apps.
-This is a simple framework which allows you to get started with android app testing using Appium.
+This is a simple framework which allows you to get started with android app testing using Appium. The test reports are generated using extent reports (https://github.com/extent-framework/extentreports-java)
 The framework can act as a base for your test automation framework over which you can make necessary modifications and upgrade.
 A demo app testing(https://github.com/saucelabs/sample-app-mobile) is included in the framework to quickly setup and run.
 
