@@ -23,10 +23,17 @@ The folder structure of the framework is as follows:
 	- parameter name="platform_name" value="ANDROID
 	- parameter name="platform_version" value="10" (platform version)
 	- parameter name="device_name" value="Pixel_4" (Name of the emulator)
-	- "<parameter name="new_command_timeout" value="120" /> (Timeout waiting for new command)"
-	- "<parameter name="appToTest"	value="<Absolute path to the folder>/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk" />"
-	- "<parameter name="appPackage" value="com.swaglabsmobileapp" />"
-	- "<parameter name="appActivity" value="com.swaglabsmobileapp.MainActivity" />"
-	- "<parameter name="avd" value="Pixel_4" />"
-     	- "<parameter name="consolePort" value="5556" />"
-     	- "<parameter name="appiumServerURL" value="http://127.0.0.1:4723/wd/hub" /> (Appium server URL)"
+	- parameter name="new_command_timeout" value="120" (Appium timeout waiting for new command)
+	- parameter name="appToTest" value="<Absolute path to the folder>/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
+	- parameter name="appPackage" value="com.swaglabsmobileapp"
+	- parameter name="appActivity" value="com.swaglabsmobileapp.MainActivity"
+	- parameter name="avd" value="Pixel_4"
+	- parameter name="consolePort" value="5556"
+	- parameter name="appiumServerURL" value="http://127.0.0.1:4723/wd/hub" (Appium server URL)
+ - src/test/resources/config.properties - Propertie file to set framewoke properties.
+	- db_url: The URL to the test data sqlite db
+	- db_testCaseDataColumns_table_name: The name of the table where the test method and the test data table mapping is done. This table is important for fetching the test data. This table has 3 columns, testMethodName(Name of the testmethod in test class), testDataTableName(table where the test data is stored) and testDataId(rowId of the testDataTableName from which the data should be fetched)
+	- test_report_location: Location where the test report should be generated
+	- test_report_config: Location where the extent test report config file is located (Can be left as it is)
+	- report_name: Name of the test report
+ - src/test/resources/testData.db - Sqlite test data db location
