@@ -24,7 +24,7 @@ The folder structure of the framework is as follows:
 	- parameter name="platform_version" value="10" (platform version)
 	- parameter name="device_name" value="Pixel_4" (Name of the emulator)
 	- parameter name="new_command_timeout" value="120" (Appium timeout waiting for new command)
-	- parameter name="appToTest" value="<Absolute path to the folder>/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
+	- parameter name="appToTest" value="Absolute path to the folder/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
 	- parameter name="appPackage" value="com.swaglabsmobileapp"
 	- parameter name="appActivity" value="com.swaglabsmobileapp.MainActivity"
 	- parameter name="avd" value="Pixel_4"
