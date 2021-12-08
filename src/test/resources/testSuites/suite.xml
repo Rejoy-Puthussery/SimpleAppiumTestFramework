@@ -5,7 +5,7 @@
 	<parameter name="platform_version" value="10" />
 	<parameter name="device_name" value="Pixel_4" />
 	<parameter name="new_command_timeout" value="120" />
-	<parameter name="appToTest"	value="/home/rp/CodingProjects/Mobile/SimpleAppiumTestFramework/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk" />
+	<parameter name="appToTest"	value="-Absoulute path-/SimpleAppiumTestFramework/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk" />
 	<parameter name="appPackage" value="com.swaglabsmobileapp" />
 	<parameter name="appActivity" value="com.swaglabsmobileapp.MainActivity" />
 	<parameter name="avd" value="Pixel_4" />
