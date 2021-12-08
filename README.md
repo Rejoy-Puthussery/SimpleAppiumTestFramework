@@ -19,10 +19,10 @@ The folder structure of the framework is as follows:
  - src/test/java/tests - The folder where the test files should be placed. Create class which extends the TestSetupTearDown class in the utilities package to define tests. Use the normal TestNG convention to define the test method.To use data provider, give the data provider method name (dataProvider = "data-provider")and class (dataProviderClass = TestDataProvider.class) in the Test annotation.The data provider method returns a hashmap of the data set in the sqlite db. Sample test methods are available in the tests folder for reference.
  - src/test/java/utilities - Framework related files.
  - src/test/resources/apps - Folder where the test app apk file should be placed to install
- - src/test/resources/testSuites - Folder where the test suite xml should be placed. The xml should have the following parameters set at suite level. Refer the demo test xml available in the folder.
-	- "<parameter name="platform_name" value="ANDROID" />"
-	- "<parameter name="platform_version" value="10" /> (platform version)"
-	- "<parameter name="device_name" value="Pixel_4" /> (Name of the emulator)"
+ - src/test/resources/testSuites - Folder where the testng suite xml should be placed. The xml should have the following parameters set at suite level. Refer the demo test xml available in the folder.
+	- parameter name="platform_name" value="ANDROID
+	- parameter name="platform_version" value="10" (platform version)
+	- parameter name="device_name" value="Pixel_4" (Name of the emulator)
 	- "<parameter name="new_command_timeout" value="120" /> (Timeout waiting for new command)"
 	- "<parameter name="appToTest"	value="<Absolute path to the folder>/src/test/resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk" />"
 	- "<parameter name="appPackage" value="com.swaglabsmobileapp" />"
