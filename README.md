@@ -46,6 +46,7 @@ The folder structure of the framework is as follows:
 	- parameter name="avd" value="Should be set to the emulator name in your device"
 	- parameter name="consolePort" value="Port on which you intent to run the emulator. Can leave default value if the port is available"
 	- parameter name="appiumServerURL" value="The appium server url. Can use the existing value if local server with default port is used"
+	- [Demo suite](https://github.com/Rejoy-Puthussery/SimpleAppiumTestFramework/blob/34b360f07a7c004d1774cef4e21b41c645b801d8/demo/test_suite_xml.png)
 - Make sure appium server is running.
 - Make sure adb service is running (adb start-server).
 - Once the above updates and checks are done run 'mvn clean test' from the 'pom.xml' location.
