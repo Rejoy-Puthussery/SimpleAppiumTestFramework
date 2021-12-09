@@ -50,3 +50,4 @@ The folder structure of the framework is as follows:
 - Make sure adb service is running (adb start-server).
 - Once the above updates and checks are done run 'mvn clean test' from the 'pom.xml' location.
 - After the test is run the report will be generated in the /testReport location.
+- Please view [Demo video](https://github.com/Rejoy-Puthussery/SimpleAppiumTestFramework/blob/b5372b91433a8d86a22a701787a44db1101059d9/demo/demo_test.mkv?raw=true)
